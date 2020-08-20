@@ -127,38 +127,33 @@
         width: 80px;
       }
   
-      .news-divider-column {
-        width: 30px;
-      }
-  
       .table-container + div > div {
         border: none !important;
         padding-top: 0 !important;
       }
   
       /* Responsive */
-      @media only screen and (max-width: 720px) {
+      @media only screen and (max-width: 640px) {
         .table-container {
           width: 96%;
-          margin: 0 2%;
         }
   
         .main-container-sidebar-column {
-          width: 20px;
+          width: 40px;
         }
-  
-        .news-divider-column {
-          width: 10px;
+
+        .email-action {
+          width: 100%;
         }
       }
     </style>
   </head>
   <body>
     <!-- The Email client preview part goes here -->
-    <div style="display:none;font-size:1px;color:#333333;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;">
+    <div style="display:none; font-size:1px; color:#333; line-height:1px; max-height:0; max-width:0; opacity:0; overflow:hidden;">
       This Email contains your NEAR Wallet recovery link for the following account: kendall.near
     </div>
-    <table class="table-container" cellpadding="0" cellspacing="0" border="0" style="margin: 0 auto;">
+    <table class="table-container" cellpadding="0" cellspacing="0" border="0" style="margin:0 auto;">
       <tr>
         <td height="40"></td>
       </tr>
@@ -173,13 +168,13 @@
         <td height="20"></td>
       </tr>
     </table>
-    <table class="table-container" cellpadding="0" cellspacing="0" border="0" style="margin: 0 auto;">
+    <table class="table-container" cellpadding="0" cellspacing="0" border="0" style="margin:0 auto;">
       <tr>
         <td height="20"></td>
       </tr>
       <tr>
         <td>
-          <table style="background-color: #fff;border-radius: 8px;">
+          <table style="background-color:#fff; border-radius:8px;">
             <tr>
               <td class="main-container-sidebar-column"></td>
               <td>
@@ -196,7 +191,7 @@
                     <td height="20"></td>
                   </tr>
                   <tr>
-                    <td align="center" style="font-size: 28px;color: #25272A;font-weight: 700;"
+                    <td align="center" style="font-size:28px; color:#25272A; font-weight:700;"
                         class="normal-font-family">
                       <!-- The title goes here -->
                       <span>Wallet Account Recovery</span>
@@ -207,12 +202,12 @@
                   </tr>
                   <tr>
                     <!-- The content goes here -->
-                    <td style="font-size: 16px;color: #3b3b3b;line-height: 24px;" class="normal-font-family md-content">
+                    <td style="font-size:16px; color:#3b3b3b; line-height:24px;" class="normal-font-family md-content">
                       <p>This Email contains your <a href="https://near.org/" target="_blank" title="NEAR Wallet">NEAR Wallet</a> recovery link for the following account:</p>
                       <p>
-                        <span style="background: #F6F6F6; color: #0B70CE; display: block; font-weight: 700; margin: 30px 0; padding: 10px 20px; text-align:center; ">kendall.near</span>
+                        <span style="background:#F6F6F6; border-radius:5px; color:#0B70CE; display:block; font-weight:700; margin:30px 0; padding:10px 20px; text-align:center; ">kendall.near</span>
                       </p>
-                      <p>Keep this Email safe, and <strong>DO NOT SHARE IT!</strong> <span style="color: #DF2626;">We cannot resend this Email.</span></p>
+                      <p>Keep this Email safe, and <strong>DO NOT SHARE IT!</strong> <span style="color:#DF2626;">We cannot resend this Email.</span></p>
                       <p>Click below to recover your account.</p>
                     </td>
                   </tr>
@@ -222,23 +217,11 @@
                   <tr>
                     <td>
                       <!-- The content action button goes here -->
-                      <table class="email-action" align="center" style="border:0;height:auto;margin:0 auto;padding:0;">
+                      <table class="email-action" align="center" style="border:0; height:auto; padding:0;">
                         <tr>
-                          <td style="text-align:center;">
+                          <td style="background:#0B70CE; border:0; border-radius:100px; color:#fff; text-align:center; width:100%;">
                             <!-- The button goes here -->
-                            <table class="btn" align="center" style="margin:0 auto;width:auto !important;">
-                              <tr>
-                                <td>
-                                  <table>
-                                    <tr>
-                                      <td style="background:#0B70CE;border:0;border-radius:100px;color:#fff;">
-                                        <a href="#" target="_blank" style="color:#fff;display:inline-block;font-size:14px;height:28px;line-height:28px;padding:6px 24px;text-decoration:none;">RECOVER ACCOUNT</a>
-                                      </td>
-                                    </tr>
-                                  </table>
-                                </td>
-                              </tr>
-                            </table>
+                            <a href="#" target="_blank" style="color:#fff; display:block; font-size:14px; height:28px; letter-spacing:2px; line-height:28px; padding:8px 32px; text-decoration:none;">RECOVER ACCOUNT</a>
                           </td>
                         </tr>
                       </table>
